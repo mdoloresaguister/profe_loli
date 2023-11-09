@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Consultas de acción | Unidad Didáctica 6 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Mª Dolores Martínez Aguilar" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+<body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad Didáctica 6</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">MY SQL LAB</a></li>
+   <li class="current-page-parent"><a href="contenidos_tericos.html" class="current-page-parent daddy">CONTENIDOS TEÓRICOS</a>
+   <ul>
+      <li id="active"><a href="consultas_de_accin.html" class="active no-ch">Consultas de acción</a></li>
+   </ul>
+   </li>
+   <li><a href="proyecto_final_las_8_consultas.html" class="no-ch">PROYECTO FINAL: LAS 8 CONSULTAS</a></li>
+   <li><a href="gua_didctica.html" class="no-ch">Guía didáctica</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="contenidos_tericos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="proyecto_final_las_8_consultas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Consultas de acción</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id9">
+<div class="iDevice emphasis0" >
+<div id="ta9_129_2" class="block iDevice_content">
+<div class="exe-text"><p>Las consultas de acción son aquellas que no devuelven ningún registro, son las encargadas de acciones como añadir, borrar y modificar registros. Tanto las sentencias de actualización como las de borrado desencaderán (según el motor de datos) las actualizaciones en cascada, borrados en cascada, restricciones y valores por defecto definidos para los diferentes campos o tablas afectadas por la consulta.<br /><strong></strong><strong></strong></p>
+<figure class="exe-figure exe-image position-center" style="width: 720px;"><img src="consultas-sql-min.png" alt="Consultas de acción" width="720" height="300" />
+<figcaption class="figcaption"><span class="author">https://linube.com</span></figcaption>
+</figure>
+<p><strong><span style="font-size: 14pt;">A) DELETE</span></strong></p>
+<p>Crea una consulta de eliminación que elimina los registros de una o más de las tablas listadas en la cláusula FROM que satisfagan la cláusula WHERE. Esta consulta elimina los registros completos, no es posible eliminar el contenido de algún campo en concreto. Su sintaxis es:</p>
+<p style="text-align: center;"><br /><strong>DELETE FROM Tabla WHERE criterio</strong></p>
+<p>Ejemplo1:<br /><strong>DELETE FROM Empleados WHERE Cargo = 'Vendedor'</strong></p>
+<p><span style="font-size: 14pt;"><strong>B) INSERT INTO</strong></span></p>
+<p>Agrega un registro en una tabla. Se la conoce como una consulta de datos añadidos. Esta consulta puede ser de dos tipos: Insertar un único registro ó Insertar en una tabla los registros contenidos en otra tabla.<br />Para insertar un único registro utilizaremos la siguiente sintaxis:</p>
+<p style="text-align: center;"><strong>INSERT INTO Tabla (campo1, campo2, ..., campoN) VALUES (valor1, valor2, ..., valorN)</strong></p>
+<p>Esta consulta graba en el campo1 el valor1, en el campo2 y valor2 y así sucesivamente.</p>
+<p>Ejemplo1:</p>
+<p><strong>INSERT INTO Empleados (Nombre, Apellido, Cargo) VALUES ( 'Luis', 'Sánchez', 'Becario' );</strong></p>
+<p><span style="font-size: 14pt;"><strong>C) UPDATE</strong></span></p>
+<p>Crea una consulta de actualización que cambia los valores de los campos de una tabla especificada basándose en un criterio específico.<br />Su sintaxis es:</p>
+<p style="text-align: center;"><strong>UPDATE Tabla SET Campo1=Valor1, Campo2=Valor2,CampoN=ValorN WHERE Criterio;</strong></p>
+<p>UPDATE es especialmente útil cuando se desea cambiar un gran número de registros o cuando éstos se encuentran en múltiples tablas. Puede cambiar varios campos a la vez.</p>
+<p>Ejemplo1: Incrementa los valores Cantidad pedidos en un 10 por ciento y los valores Transporte en un 3 por ciento para aquellos que se hayan enviado a España:</p>
+<p><strong>UPDATE Pedidos SET Pedido = Pedidos * 1.1, Transporte = Transporte * 1.03 WHERE PaisEnvío = 'ES' ;</strong></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="contenidos_tericos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="proyecto_final_las_8_consultas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="tknika_js.js"></script></body></html>

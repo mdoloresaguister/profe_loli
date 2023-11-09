@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>CONTENIDOS TEÓRICOS | Unidad Didáctica 6 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Mª Dolores Martínez Aguilar" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+<body class="exe-web-site" id="exe-node-1"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad Didáctica 6</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">MY SQL LAB</a></li>
+   <li id="active"><a href="contenidos_tericos.html" class="active daddy">CONTENIDOS TEÓRICOS</a>
+   <ul>
+      <li><a href="consultas_de_accin.html" class="no-ch">Consultas de acción</a></li>
+   </ul>
+   </li>
+   <li><a href="proyecto_final_las_8_consultas.html" class="no-ch">PROYECTO FINAL: LAS 8 CONSULTAS</a></li>
+   <li><a href="gua_didctica.html" class="no-ch">Guía didáctica</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="consultas_de_accin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">CONTENIDOS TEÓRICOS</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id25">
+<div class="iDevice emphasis0" >
+<div id="ta25_127_2" class="block iDevice_content">
+<div class="exe-text"><figure class="exe-figure exe-image license-CC0" style="width: 640px;"><img src="contenidos_teoricos.jpg" alt="Contenidos teóricos" title="Generada por AI" width="209" height="272" />
+<figcaption class="figcaption"><a href="Generada a través de AI" target="_blank" class="author" rel="noopener">Generada a través de AI</a> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id1">
+<div class="iDevice emphasis0" >
+<div id="ta1_121_2" class="block iDevice_content">
+<div class="exe-text"><p>Existen dos tipos de comandos en SQL, dependiendo de cuál sea su función:</p>
+<p>a) Por un lado, están los que permiten crear nuevas bases de datos, añadiendo y eliminando elementos. Son los comandos <strong>DDL</strong> (Data Definition Language o Lenguaje de Definición de Datos):</p>
+<p><strong>CREATE</strong>: crea nuevas tablas, campos e índices.<br /><strong>DROP</strong>: elimina tablas e índices.<br /><strong>ALTER</strong>: agrega campos o los modifica.</p>
+<p>Al trabajar con datos, el lenguaje SQL ofrece la posibilidad de realizar una serie de operaciones básicas que se conocen como operaciones CRUD (Create, Read, Update and Delete). Estas tareas a su vez responden a cuatro instrucciones, que son las que se utilizan para obtener datos y filtrarlos. Son los comandos <strong>DML</strong> (Data Manipulation Language o Lenguaje de Manipulación de Datos):</p>
+<p><strong>INSERT</strong>: añade filas en una tabla.<br /><strong>SELECT</strong>: permite consultar registros de la base de datos.<br /><strong>UPDATE</strong>: actualiza los valores de campos y registros de una tabla.<br /><strong>DELETE</strong>: borra filas de una tabla.</p>
+<p>Precisamente el comando SELECT es el que utilizaremos para realizar consultas en SQL, aunque como vemos hay muchos más comandos para manipular una base de datos.</p>
+<p><span style="font-size: 14pt;"><strong>CONSULTAS DE SELECCIÓN</strong></span></p>
+<p>Las consultas de selección se utilizan para indicar al motor de datos que devuelva información de las bases de datos, esta información es devuelta en forma de conjunto de registros que se pueden almacenar en un objeto recordset. Este conjunto de registros puede ser modificable.</p>
+<figure class="exe-figure exe-image position-center license-CC0" style="width: 720px;"><img src="consultas-sql-min.png" alt="Consultas SQL" title="Consultas SQL" width="720" height="300" />
+<figcaption class="figcaption"><span class="license"><span class="tit">Licencia: </span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a></span></figcaption>
+</figure>
+<p>La sintaxis básica de una consulta de selección es la siguiente:</p>
+<p style="text-align: center;"><strong>SELECT [ALL / DISTINCT]</strong><br /><strong>[exp._col1, exp._col2, …exp_colN | * ]</strong><br /><strong>FROM [nombre_tabla1, nombre_tabla2, …, nombre_tablaN]</strong><br /><strong>[WHERE condicion]</strong><br /><strong>[ORDER BY exp_col [DESC|ASC]</strong><br /><strong>[, exp_col [DESC|ASC]…];</strong></p>
+<p>Destacar, que FROM es la única cláusula obligatoria.</p>
+<p>Ejemplo:</p>
+<p><strong>SELECT nombre, teléfono</strong><br /><strong>FROM clientes;</strong></p>
+<p>Esta sentencia que devuelve un conjunto de resultados con el campo nombre y teléfono de la tabla clientes.</p>
+<p><span style="font-size: 14pt;"><strong>CONSULTAS DE SELECCIÓN CON GROUP BY</strong></span></p>
+<p>La cláusula GROUP BY se coloca después del WHERE y es una cláusula que combina los registros con valores idénticos, en la lista de campos especificados en dicha cláusula, en un único registro.<br />Para cada registro se crea un valor sumario si se incluye una función SQL agregada, como por ejemplo SUM o COUNT, en la instrucción SELECT.<br />Su sintaxis es:</p>
+<p style="text-align: center;"><br /><strong>SELECT campos FROM tabla WHERE criterio GROUP BY campos del grupo</strong></p>
+<p>Características de este tipo de consultas:</p>
+<p>Los valores de resumen se omiten si no existe una función SQL agregada en la instrucción SELECT.<br />Además de la cláusula WHERE para excluir aquellas filas que no deseamos agrupar, podemos incluir la cláusula HAVING para filtrar los registros una vez agrupados.<br />Todos los campos de la lista de campos de SELECT deben o bien incluirse en la cláusula GROUP BY o como argumentos de una función SQL agregada.<br />Ejemplo1:</p>
+<p><strong>SELECT IdFamilia, SUM(Stock) “StockActual” FROM Productos GROUP BY IdFamilia;</strong></p>
+<p>Una vez que GROUP BY ha combinado los registros, HAVING muestra cualquier registro agrupado por la cláusula GROUP BY que satisfaga las condiciones de la cláusula HAVING.</p>
+<p>HAVING es similar a WHERE, determina qué registros se seleccionan, es decir, una vez que los registros se han agrupado utilizando GROUP BY, HAVING determina cuales de ellos se van a mostrar.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id19">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_activity.gif)"><h1 class="iDeviceTitle">TAREA: Consultas simples SQL</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta19_121_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duración:</span></dt><dd class="pbl-task-duration">2:00</dd><dt class="pbl-task-participants"><span>Agrupamiento:</span></dt><dd class="pbl-task-participants">2</dd></dl><div class="pbl-task-description"><p>NOTA: Utiliza la herramienta Workbench para realizar las consultas y entrégalas en forma de un script SQL.</p>
+<p>A) Dadas las bases de datos 1 y 2 creadas en la unidad didáctica 5, realiza las siguientes consultas de selección:</p>
+<p>1. Obtener los nombres de los artículos de la tienda.<br />2. Obtener los nombres y los precios de los artículos de la tienda.<br />3. Obtener el nombre de los artículos cuyo precio sea menor o igual a 200€. <br />4. Obtener los apellidos de los empleados.<br />5. Obtener los apellidos de los empleados sin repeticiones<br />6. Obtener todos los datos de los empleados que se apellidan ‘López’.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id20">
+<div class="iDevice emphasis0" >
+<div id="ta20_122_2" class="block iDevice_content">
+<div class="exe-text"><p><strong><span style="font-size: 14pt;">CONSULTAS MULTITABLA</span></strong></p>
+<p>Las consultas multitabla nos permiten consultar información en más de una tabla. La única diferencia respecto a las consultas sencillas es que vamos a tener que especificar en la cláusula FROM cuáles son las tablas que vamos a usar y cómo las vamos a relacionar entre sí.</p>
+<p>Los tipos de composición a la hora de unir varias tablas son:<br />• El producto cartesiano<br />• INNER JOIN<br />• LEFT / RIGHT JOIN</p>
+<figure class="exe-figure exe-image position-center license-CC0" style="width: 750px;"><img src="multitabla.png" alt="Consultas multitabla" title="Consultas multitabla" width="750" height="300" />
+<figcaption class="figcaption"><span class="author">CampusMVP</span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></figcaption>
+</figure>
+<p><br /><br /></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id21">
+<div class="iDevice emphasis0" >
+<div id="ta21_123_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-fx exe-tabs">
+<h2>CONSULTAS DE UNIÓN INTERNAS</h2>
+<p>Las consultas de unión internas o de autocombinación se utilizan para unir una tabla consigo misma, comparando valores de dos columnas con el mismo tipo de datos. La sintaxis en la siguiente:</p>
+<p><br /><strong>SELECT</strong><br /><strong>alias1.columna, alias2.columna, ...</strong><br /><strong>FROM</strong><br /><strong>tabla1 alias1, tabla2 alias2</strong><br /><strong>WHERE</strong><br /><strong>alias1.columna = alias2.columna</strong><br /><strong>AND</strong><br /><strong>otras condiciones</strong></p>
+<p>Ejemplo1: visualizar el número, nombre y salario de cada empleado, junto con el número, nombre y salario del director de cada uno de ellos se utilizaría la siguiente sentencia:<br /><strong>SELECT t.emp_no, t.apellido, t.salario, t.dir,s.apellido, s.salario</strong><br /><strong>FROM empleados t, empleados s</strong><br /><strong>WHERE t.dir = s.emp_no;</strong></p>
+<h2>CONSULTAS DE UNIÓN EXTERNAS</h2>
+<p>El operador UNION se utiliza cuando se necesita combinar los resultados de dos consultas diferentes. Los resultados no tienen que tener ninguna vinculación entre ellos; se quiere mostrar todos los resultados juntos.<br />Su sintaxis es la siguiente:</p>
+<p><br /><strong>SELECT</strong><br /><strong>alias1.columna, alias2.columna, ...</strong><br /><strong>FROM</strong><br /><strong>tabla1 alias1, tabla2 alias2</strong><br /><strong>WHERE</strong><br /><strong>alias1.columna = alias2.columna</strong><br /><strong>UNION</strong><br /><strong>SELECT</strong><br /><strong>alias1.columna, alias2.columna, ...</strong><br /><strong>FROM</strong><br /><strong>tabla1 alias1, tabla2 alias2</strong><br /><strong>WHERE</strong><br /><strong>alias1.columna = alias2.columna</strong></p>
+<p><br />Ejemplo1:</p>
+<p><br /><strong>SELECT nombre, ciudad</strong><br /><strong>FROM proveedores</strong><br /><strong>WHERE pais=”Brasil”</strong><br /><strong>UNION</strong><br /><strong>SELECT nombre, ciudad</strong><br /><strong>FROM clients</strong><br /><strong>WHERE pais=”Brasil”;</strong></p>
+</div>
+<p><span style="font-size: 14pt;"><strong> </strong></span></p>
+<p></p>
+<p><span style="font-size: 14pt;"><strong> </strong></span></p>
+<p></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id22">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_activity.gif)"><h1 class="iDeviceTitle">TAREA: Consultas Multitabla</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta22_124_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duración:</span></dt><dd class="pbl-task-duration">2:00</dd><dt class="pbl-task-participants"><span>Agrupamiento:</span></dt><dd class="pbl-task-participants">2</dd></dl><div class="pbl-task-description"><p><strong>NOTA</strong>: Utiliza la herramienta Workbench para realizar las consultas y entrégalas en forma de un script SQL.</p>
+<p>A) Dadas las bases de datos 1 y 2 creadas en la unidad didáctica 5, realiza las siguientes consultas multitabla:</p>
+<p>1. Obtener un listado de artículos, incluyendo por cada artículo los datos del artículo y de su fabricante. Hacerlo sin operador JOIN.<br />2. Obtener un listado de artículos, incluyendo por cada artículo los datos del artículo y de su fabricante. Hacerlo con operador JOIN.<br />3. Obtener un listado de artículos, incluyendo el nombre del artículo, su precio, y el nombre de su fabricante. Hacerlo sin operador JOIN. <br />4. Obtener un listado completo de empleados, incluyendo el nombre y apellidos del empleado junto al nombre y presupuesto de su departamento.<br />5. Obtener los nombres y apellidos de los empleados que trabajen en departamentos cuyo presupuesto no esté entre los 60 000 € y los 150 000€. Resolverlo haciendo uso del operador BETWEEN y del<br />operador INNER JOIN.<br />6. Obtener los nombres y apellidos de los empleados que trabajen en departamentos cuyo presupuesto no esté entre los 60 000 € y los 150 000€. Resolverlo sin hacer uso del operador BETWEEN, pero<br />haciendo uso del operador INNER JOIN.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="consultas_de_accin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="tknika_js.js"></script></body></html>
